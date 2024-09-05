@@ -113,18 +113,18 @@ header {
 article {
   display: flex;
   justify-content: center; /* 横方向の中央揃え */
-  
+  flex-wrap: wrap;
 }
 
 .info {
   flex-direction: row;
   display: flex;
-  justify-content: center;  /* 横方向の中央揃え */ 
+  justify-content: center; /* Ensure items are centered */
   margin: 80px;
+  width: 100%;
 }
 
 .info-event {
-  width: 300px;
   word-wrap: break-word;
   text-align: center;
   padding-right: 15px;
@@ -161,3 +161,42 @@ article {
   color: #0030ff;
 }
 
+.event-page p {
+  width: 320px;
+}
+
+
+#walk-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #eff5dc;
+}
+
+#SNS-guide {
+  display: flex;
+  justify-content: center;  /* 横方向の中央揃え */
+  align-items: center;
+  width: 100%;
+}
+
+#SNS-content1 {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SNS-content2 {
+  background-image: url(images/white-back.png);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size:contain; 
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* 横方向の中央揃え */
+  text-align: center;
+  margin: 0 50px;
+}
